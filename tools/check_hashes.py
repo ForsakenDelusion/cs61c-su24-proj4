@@ -16,7 +16,7 @@ starter_file_hashes = {
     "tools/framework.py": "1b7e09eaff4f886a8d7395c88129cd11",
     "tools/results_to_gif.py": "990fba3042d1ba07718c0e240f31f14e",
     "tools/run_test.sh": "fd44999a528c848997de2cb07b12b6e9",
-    "tools/staff_tests.py": "70a194326818ad02f87dc0138a90aea2",
+    "tools/staff_tests.py": "a77673678dd6b3fe4f0aa80e4a9b0a6a",
 }
 
 def check_hash(rel_path_str):

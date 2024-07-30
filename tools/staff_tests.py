@@ -3,6 +3,17 @@ import math
 from framework import Test, TestSpec, Task, Matrix, randint
 import filters
 
+@Test()
+def test_tiny(test: TestSpec):
+    test.add_task(Task(Matrix.random(2, 2, min_value=1, max_value=10),
+                  Matrix.random(2, 2, min_value=1, max_value=10)))
+    test.add_task(Task(Matrix.random(4, 4, min_value=1, max_value=10),
+                  Matrix.random(2, 2, min_value=1, max_value=10)))
+    test.add_task(Task(Matrix.random(5, 3, min_value=1, max_value=10),
+                  Matrix.random(4, 2, min_value=1, max_value=10)))
+    test.add_task(Task(Matrix.random(5, 4, min_value=1, max_value=10),
+                  Matrix.random(4, 3, min_value=1, max_value=10)))
+
 
 @Test()
 def test_small(test: TestSpec):
